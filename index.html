@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anis Douar — Video Editor & Storyteller</title>
+    <meta name="description" content="Portfolio of Anis Douar, the creative force behind Movies Consigliere — cinematic video essays, deep-dive analyses, and storytelling.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">ANIS<span>DOUAR</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-label">Video Editor & Storyteller</p>
+            <h1 class="hero-title">ANIS DOUAR</h1>
+            <p class="hero-subtitle">Crafting cinematic video essays that uncover the hidden layers of the greatest stories ever told.</p>
+            <div class="hero-stats" id="channelStats">
+                <div class="stat">
+                    <span class="stat-number" id="statVideos">—</span>
+                    <span class="stat-label">Videos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="statViews">—</span>
+                    <span class="stat-label">Total Views</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="statSubs">—</span>
+                    <span class="stat-label">Subscribers</span>
+                </div>
+            </div>
+            <a href="#work" class="hero-cta">View My Work</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">I'm <strong>Anis Douar</strong>, the creator behind <em>Movies Consigliere</em>.</p>
+                    <p>I specialize in crafting deep-dive video essays that dissect the narratives, characters, and hidden details of cinema's greatest works — from the crime epics of Scorsese and Coppola to the psychological thrillers of Fincher and Tarantino.</p>
+                    <p>Every video is a journey beneath the surface: uncovering what really happened, why characters made the choices they did, and the storytelling techniques that make these films timeless. I combine meticulous research, compelling narration, and polished editing to transform complex film analysis into engaging, cinematic content.</p>
+                    <p>Whether it's exposing the real history behind <em>Goodfellas</em>, decoding the visual language of <em>The Godfather</em>, or unraveling the mind games of <em>Pulp Fiction</em> — my goal is to make you see your favorite films in a completely new light.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <div class="highlight-icon">🎬</div>
+                        <h3>Video Essays</h3>
+                        <p>In-depth analysis that goes beyond the surface of cinema's greatest moments.</p>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-icon">🔍</div>
+                        <h3>Deep Research</h3>
+                        <p>Every video is backed by hours of research into real history and filmmaking craft.</p>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-icon">✂️</div>
+                        <h3>Professional Editing</h3>
+                        <p>Polished, cinematic editing that keeps audiences engaged from start to finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ WORK / VIDEOS ═══════════════ -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-desc">A selection of my most popular video essays from the <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener">Movies Consigliere</a> channel.</p>
+            </div>
+
+            <!-- Category filter -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="goodfellas">Goodfellas</button>
+                <button class="filter-btn" data-filter="godfather">The Godfather</button>
+                <button class="filter-btn" data-filter="pulp-fiction">Pulp Fiction</button>
+                <button class="filter-btn" data-filter="sopranos">The Sopranos</button>
+                <button class="filter-btn" data-filter="other">Other Films</button>
+            </div>
+
+            <div class="video-grid" id="videoGrid">
+                <!-- Videos are injected by JS -->
+            </div>
+
+            <div class="work-cta">
+                <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener" class="btn-outline">
+                    View All Videos on YouTube →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-desc">Interested in collaborating or want to discuss a project? Let's connect.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:anisdouar@gmail.com">anisdouar@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🎬</div>
+                        <h3>YouTube</h3>
+                        <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener">@MoviesConsigliere</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>Social</h3>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.54 15.57V8.43L15.82 12l-6.28 3.57z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-logo">ANIS<span>DOUAR</span></p>
+                <p class="footer-text">&copy; 2024 Anis Douar. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
