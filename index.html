@@ -108,8 +108,8 @@
 
             <!-- Channel tabs -->
             <div class="channel-tabs">
-                <button class="channel-tab active" data-ch="mc">Movies Consigliere</button>
-                <button class="channel-tab" data-ch="itu">Into The Unknown</button>
+                <button class="channel-tab active" id="tabMC">Movies Consigliere</button>
+                <button class="channel-tab" id="tabITU">Into The Unknown</button>
             </div>
 
             <!-- Filters: Movies Consigliere -->
@@ -172,15 +172,15 @@
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <label for="name" data-i18n="contact.name">Name</label>
-                        <input type="text" id="name" name="name" required data-i18n-placeholder="contact.namePh" placeholder="Your name">
+                        <input type="text" id="name" name="name" required placeholder="Your name" data-ph="contact.name">
                     </div>
                     <div class="form-group">
                         <label for="email" data-i18n="contact.email">Email</label>
-                        <input type="email" id="email" name="email" required data-i18n-placeholder="contact.emailPh" placeholder="your@email.com">
+                        <input type="email" id="email" name="email" required placeholder="your@email.com" data-ph="contact.email">
                     </div>
                     <div class="form-group">
                         <label for="message" data-i18n="contact.message">Message</label>
-                        <textarea id="message" name="message" rows="5" required data-i18n-placeholder="contact.messagePh" placeholder="Tell me about your project..."></textarea>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..." data-ph="contact.message"></textarea>
                     </div>
                     <button type="submit" class="btn-primary" data-i18n="contact.send">Send Message</button>
                 </form>
