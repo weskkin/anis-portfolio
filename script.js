@@ -19,11 +19,11 @@ var ITU_SHORTS = [
 // ── VIDEO DATA ────────────────────────────────────────────────────────────────
 
 var MC_VIDEOS = [
+  {id:'pHwE_a6IwzA', title:'Paul Vario Was Far Worse Than Goodfellas Ever Showed',              cat:'goodfellas'},
   {id:'SpICdPCqv38', title:'Why Was Tommy Really Killed in Goodfellas, and Who Set Him Up?',    cat:'goodfellas'},
   {id:'zO6uanlY4Sc', title:'What Really Happened to Henry Hill After Goodfellas Ended?',         cat:'goodfellas'},
   {id:'XSyvGHBL47A', title:'Goodfellas Lied — What Really Happened to Frankie Carbone?',        cat:'goodfellas'},
   {id:'_fScTfw2gs0', title:"This Dinner Scene in Goodfellas Isn't What It Looks Like",           cat:'goodfellas'},
-  {id:'pHwE_a6IwzA', title:'Paul Vario Was Far Worse Than Goodfellas Ever Showed',              cat:'goodfellas'},
   {id:'loDK7q4tGJo', title:'How Do the Corleone Men Redefine Strength in The Godfather?',       cat:'godfather'},
   {id:'ZwYZB_Xq90E', title:'Was Sonny Corleone Actually a Bad Don, or Did We Misread Him?',     cat:'godfather'},
   {id:'lCXqfKGcb0M', title:'What Kay and Apollonia Really Represent in The Godfather?',         cat:'godfather'},
