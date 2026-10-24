@@ -159,6 +159,58 @@ section { padding: 100px 0; }
 .field textarea { resize: vertical; min-height: 120px; }
 .contact-form .btn-gold { align-self: flex-start; }
 
+/* ── SHORTS ── */
+.shorts-head {
+    display: flex; align-items: center; gap: 12px;
+    margin: 48px 0 20px;
+    border-top: 1px solid var(--border);
+    padding-top: 36px;
+}
+.shorts-label {
+    font-family: var(--head); font-size: 1.4rem; letter-spacing: 3px; color: var(--text);
+}
+
+.shorts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+}
+
+.short-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    overflow: hidden; transition: all var(--ease);
+}
+.short-card:hover { border-color: var(--gold2); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,.35); }
+
+/* portrait 9:16 ratio */
+.short-thumb {
+    position: relative; padding-bottom: 177.78%; background: #000; cursor: pointer; overflow: hidden;
+}
+.short-thumb img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    transition: transform var(--ease);
+}
+.short-card:hover .short-thumb img { transform: scale(1.04); }
+.short-thumb iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+.short-badge {
+    position: absolute; top: 8px; left: 8px;
+    font-family: var(--head); font-size: .6rem; letter-spacing: 1.5px;
+    background: var(--gold); color: var(--bg);
+    padding: 2px 8px; border-radius: 4px;
+}
+
+.short-info { padding: 12px 14px; }
+.short-title {
+    font-size: .82rem; font-weight: 500; line-height: 1.35;
+    color: var(--text); margin-bottom: 8px;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    .shorts-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+}
+
 /* ── FOOTER ── */
 .footer { border-top: 1px solid var(--border); padding: 36px 0; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }

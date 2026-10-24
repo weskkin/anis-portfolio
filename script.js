@@ -1,3 +1,21 @@
+// ── SHORTS DATA ───────────────────────────────────────────────────────────────
+
+var MC_SHORTS = [
+  {id:'Pi8d0fnE4Y8', title:"Inside Paul Vario's $150,000 Day Criminal Empire"},
+  {id:'g59TLt4XIeM', title:"Vario's Temper — Brutal Restaurant Beating"},
+  {id:'fAF8pgcq3vk', title:'The Hidden Meaning Behind The Hammer'},
+  {id:'GpPvujk1ipg', title:'Why The System Demands Surrender, Not Change'},
+  {id:'riLj9mb7PoU', title:'The Movie Never Lied To You'}
+];
+
+var ITU_SHORTS = [
+  {id:'HBLwTaEWgmM', title:'The Immortal Cells of Henrietta Lacks'},
+  {id:'v3CD-kf_J0M', title:'The Doctor Who Saved Countless Lives But His Colleagues Hated Him'},
+  {id:'LrWlAKsSDOY', title:'The Biggest Black Hole Known to Humanity'},
+  {id:'kUM0sfL4XCI', title:'El Niño to Amplify Heat in the Upcoming Years'},
+  {id:'yFP8hyze66Q', title:'The Largest Canyon in the Solar System — Valles Marineris'}
+];
+
 // ── VIDEO DATA ────────────────────────────────────────────────────────────────
 
 var MC_VIDEOS = [
@@ -167,6 +185,41 @@ function makeCard(v, label) {
   return card;
 }
 
+// ── FILL SHORTS GRID ─────────────────────────────────────────────────────────
+function fillShorts(gridId, shorts) {
+  var grid = document.getElementById(gridId);
+  grid.innerHTML = '';
+  shorts.forEach(function(s) {
+    var card = document.createElement('div');
+    card.className = 'short-card';
+    card.innerHTML =
+      '<div class="short-thumb" id="sth-' + s.id + '">' +
+        '<img src="https://img.youtube.com/vi/' + s.id + '/hqdefault.jpg" alt="' + s.title.replace(/"/g, '&quot;') + '" loading="lazy">' +
+        '<button class="play-btn" type="button" aria-label="Play short">' +
+          '<svg viewBox="0 0 68 48" width="56" height="40">' +
+            '<path class="pbg" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.63-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#111" fill-opacity=".85"/>' +
+            '<path d="M45 24L27 14v20z" fill="#fff"/>' +
+          '</svg>' +
+        '</button>' +
+        '<div class="short-badge">SHORT</div>' +
+      '</div>' +
+      '<div class="short-info">' +
+        '<p class="short-title">' + s.title + '</p>' +
+        '<div class="video-stats" id="st-' + s.id + '"><span class="vstat" style="color:var(--text3)">Loading…</span></div>' +
+      '</div>';
+
+    card.querySelector('.short-thumb').addEventListener('click', function() {
+      this.innerHTML =
+        '<iframe src="https://www.youtube.com/embed/' + s.id + '?autoplay=1"' +
+        ' allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"' +
+        ' allowfullscreen></iframe>';
+    });
+
+    grid.appendChild(card);
+  });
+  if (YT_KEY) fetchStats(shorts.map(function(s){ return s.id; }));
+}
+
 // ── FILL A GRID ───────────────────────────────────────────────────────────────
 function fillGrid(gridId, videos, labels) {
   var grid = document.getElementById(gridId);
@@ -258,6 +311,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // fill both grids
   fillGrid('grid1', MC_VIDEOS,  MC_LABELS);
   fillGrid('grid2', ITU_VIDEOS, ITU_LABELS);
+
+  // fill shorts
+  fillShorts('shorts1', MC_SHORTS);
+  fillShorts('shorts2', ITU_SHORTS);
 
   // set up filters (show/hide cards — no re-render)
   setupFilters('filters1', 'grid1');
