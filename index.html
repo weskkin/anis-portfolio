@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <!-- NAV -->
     <nav class="navbar" id="navbar">
         <a href="#" class="nav-logo">ANIS<span>DOUAR</span></a>
         <div class="nav-right">
@@ -21,24 +21,21 @@
                 <li><a href="#work" data-i18n="nav.work">Work</a></li>
                 <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-                <span class="lang-flag">🇫🇷</span>
-                <span class="lang-code">FR</span>
-            </button>
+            <button class="lang-toggle" id="langToggle">FR 🇫🇷</button>
             <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- ═══════════════ HERO ═══════════════ -->
+    <!-- HERO -->
     <header class="hero" id="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <p class="hero-label" data-i18n="hero.label">Video Editor · Content Creator · Community Manager</p>
             <h1 class="hero-title">ANIS DOUAR</h1>
             <p class="hero-subtitle" data-i18n="hero.subtitle">5+ years crafting compelling video content, building engaged communities, and bringing creative visions to life.</p>
-            <div class="hero-stats" id="channelStats">
+            <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number" id="statVideos">—</span>
                     <span class="stat-label" data-i18n="hero.videos">Videos</span>
@@ -60,7 +57,7 @@
         </div>
     </header>
 
-    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <!-- ABOUT -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-header">
@@ -100,7 +97,7 @@
         </div>
     </section>
 
-    <!-- ═══════════════ WORK / VIDEOS ═══════════════ -->
+    <!-- WORK -->
     <section class="work" id="work">
         <div class="container">
             <div class="section-header">
@@ -111,16 +108,12 @@
 
             <!-- Channel tabs -->
             <div class="channel-tabs">
-                <button class="channel-tab active" data-channel="movies-consigliere">
-                    <span class="channel-tab-name">Movies Consigliere</span>
-                </button>
-                <button class="channel-tab" data-channel="into-the-unknown">
-                    <span class="channel-tab-name">Into The Unknown</span>
-                </button>
+                <button class="channel-tab active" data-ch="mc">Movies Consigliere</button>
+                <button class="channel-tab" data-ch="itu">Into The Unknown</button>
             </div>
 
-            <!-- Category filter (Movies Consigliere) -->
-            <div class="filter-bar" id="filterBar">
+            <!-- Filters: Movies Consigliere -->
+            <div class="filter-bar" id="filtersMovies">
                 <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
                 <button class="filter-btn" data-filter="goodfellas">Goodfellas</button>
                 <button class="filter-btn" data-filter="godfather">The Godfather</button>
@@ -129,19 +122,17 @@
                 <button class="filter-btn" data-filter="other" data-i18n="filter.other">Other Films</button>
             </div>
 
-            <!-- Category filter (Into The Unknown) -->
-            <div class="filter-bar hidden" id="filterBarUnknown">
+            <!-- Filters: Into The Unknown -->
+            <div class="filter-bar" id="filtersUnknown" style="display:none">
                 <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
                 <button class="filter-btn" data-filter="science" data-i18n="filter.science">Science</button>
                 <button class="filter-btn" data-filter="history" data-i18n="filter.history">History</button>
                 <button class="filter-btn" data-filter="nature" data-i18n="filter.nature">Nature & Space</button>
             </div>
 
-            <div class="video-grid" id="videoGrid">
-                <!-- Videos are injected by JS -->
-            </div>
+            <div class="video-grid" id="videoGrid"></div>
 
-            <div class="work-cta" id="workCta">
+            <div class="work-cta">
                 <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener" class="btn-outline" id="channelLink" data-i18n="work.cta">
                     View All Videos on YouTube →
                 </a>
@@ -149,7 +140,7 @@
         </div>
     </section>
 
-    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <!-- CONTACT -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-header">
@@ -174,7 +165,7 @@
                         <h3>YouTube</h3>
                         <div class="youtube-links">
                             <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener">@MoviesConsigliere</a>
-                            <a href="https://www.youtube.com/@into_the-unknown" target="_blank" rel="noopener">@Into The Unknown</a>
+                            <a href="https://www.youtube.com/@into_the-unknown" target="_blank" rel="noopener">@IntoTheUnknown</a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +188,7 @@
         </div>
     </section>
 
-    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
