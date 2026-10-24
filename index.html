@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anis Douar — Video Editor & Storyteller</title>
-    <meta name="description" content="Portfolio of Anis Douar, the creative force behind Movies Consigliere — cinematic video essays, deep-dive analyses, and storytelling.">
+    <title>Anis Douar — Video Editor, Content Creator & Community Manager</title>
+    <meta name="description" content="Portfolio of Anis Douar — video editor, content creator and community manager with 5+ years of experience. Creator of Movies Consigliere and Into The Unknown.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,41 +15,47 @@
     <!-- ═══════════════ NAVIGATION ═══════════════ -->
     <nav class="navbar" id="navbar">
         <a href="#" class="nav-logo">ANIS<span>DOUAR</span></a>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#work" data-i18n="nav.work">Work</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                <span class="lang-flag">🇫🇷</span>
+                <span class="lang-code">FR</span>
+            </button>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </nav>
 
     <!-- ═══════════════ HERO ═══════════════ -->
     <header class="hero" id="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <p class="hero-label">Video Editor & Storyteller</p>
+            <p class="hero-label" data-i18n="hero.label">Video Editor · Content Creator · Community Manager</p>
             <h1 class="hero-title">ANIS DOUAR</h1>
-            <p class="hero-subtitle">Crafting cinematic video essays that uncover the hidden layers of the greatest stories ever told.</p>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">5+ years crafting compelling video content, building engaged communities, and bringing creative visions to life.</p>
             <div class="hero-stats" id="channelStats">
                 <div class="stat">
                     <span class="stat-number" id="statVideos">—</span>
-                    <span class="stat-label">Videos</span>
+                    <span class="stat-label" data-i18n="hero.videos">Videos</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" id="statViews">—</span>
-                    <span class="stat-label">Total Views</span>
+                    <span class="stat-label" data-i18n="hero.views">Total Views</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" id="statSubs">—</span>
-                    <span class="stat-label">Subscribers</span>
+                    <span class="stat-label" data-i18n="hero.subs">Subscribers</span>
                 </div>
             </div>
-            <a href="#work" class="hero-cta">View My Work</a>
+            <a href="#work" class="hero-cta" data-i18n="hero.cta">View My Work</a>
         </div>
         <div class="hero-scroll">
-            <span>Scroll</span>
+            <span data-i18n="hero.scroll">Scroll</span>
             <div class="scroll-line"></div>
         </div>
     </header>
@@ -59,30 +65,35 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">01</span>
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-lead">I'm <strong>Anis Douar</strong>, the creator behind <em>Movies Consigliere</em>.</p>
-                    <p>I specialize in crafting deep-dive video essays that dissect the narratives, characters, and hidden details of cinema's greatest works — from the crime epics of Scorsese and Coppola to the psychological thrillers of Fincher and Tarantino.</p>
-                    <p>Every video is a journey beneath the surface: uncovering what really happened, why characters made the choices they did, and the storytelling techniques that make these films timeless. I combine meticulous research, compelling narration, and polished editing to transform complex film analysis into engaging, cinematic content.</p>
-                    <p>Whether it's exposing the real history behind <em>Goodfellas</em>, decoding the visual language of <em>The Godfather</em>, or unraveling the mind games of <em>Pulp Fiction</em> — my goal is to make you see your favorite films in a completely new light.</p>
+                    <p class="about-lead" data-i18n="about.lead">I'm <strong>Anis Douar</strong> — a video editor, content creator, and community manager with over <strong>5 years of experience</strong>.</p>
+                    <p data-i18n="about.p1">I create engaging video content that connects with audiences and drives growth. From concept to final cut, I handle every step of the production process — scripting, editing, motion graphics, and publishing — while also managing online communities and social media strategies.</p>
+                    <p data-i18n="about.p2">My work spans multiple YouTube channels, including <em>Movies Consigliere</em> (cinematic deep-dives into iconic films) and <em>Into The Unknown</em> (exploring science, history, and the mysteries of our world). Together, they've reached millions of viewers worldwide.</p>
+                    <p data-i18n="about.p3">Whether you need a video editor to elevate your content, a community manager to grow your audience, or a creative partner to bring your vision to life — I'm here to help.</p>
                 </div>
                 <div class="about-highlights">
                     <div class="highlight">
                         <div class="highlight-icon">🎬</div>
-                        <h3>Video Essays</h3>
-                        <p>In-depth analysis that goes beyond the surface of cinema's greatest moments.</p>
+                        <h3 data-i18n="about.h1">Video Editing</h3>
+                        <p data-i18n="about.h1d">Professional editing, motion graphics, and post-production for YouTube and social media.</p>
                     </div>
                     <div class="highlight">
-                        <div class="highlight-icon">🔍</div>
-                        <h3>Deep Research</h3>
-                        <p>Every video is backed by hours of research into real history and filmmaking craft.</p>
+                        <div class="highlight-icon">📱</div>
+                        <h3 data-i18n="about.h2">Community Management</h3>
+                        <p data-i18n="about.h2d">Building and nurturing engaged online communities, managing social media presence and brand voice.</p>
                     </div>
                     <div class="highlight">
-                        <div class="highlight-icon">✂️</div>
-                        <h3>Professional Editing</h3>
-                        <p>Polished, cinematic editing that keeps audiences engaged from start to finish.</p>
+                        <div class="highlight-icon">💡</div>
+                        <h3 data-i18n="about.h3">Content Strategy</h3>
+                        <p data-i18n="about.h3d">From research and scripting to SEO and audience growth — a complete content pipeline.</p>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-icon">📊</div>
+                        <h3 data-i18n="about.h4">5+ Years Experience</h3>
+                        <p data-i18n="about.h4d">A proven track record of creating content that resonates, with millions of views across channels.</p>
                     </div>
                 </div>
             </div>
@@ -94,26 +105,44 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">02</span>
-                <h2 class="section-title">Featured Work</h2>
-                <p class="section-desc">A selection of my most popular video essays from the <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener">Movies Consigliere</a> channel.</p>
+                <h2 class="section-title" data-i18n="work.title">Featured Work</h2>
+                <p class="section-desc" data-i18n="work.desc">A selection of videos from my YouTube channels.</p>
             </div>
 
-            <!-- Category filter -->
-            <div class="filter-bar">
-                <button class="filter-btn active" data-filter="all">All</button>
+            <!-- Channel tabs -->
+            <div class="channel-tabs">
+                <button class="channel-tab active" data-channel="movies-consigliere">
+                    <span class="channel-tab-name">Movies Consigliere</span>
+                </button>
+                <button class="channel-tab" data-channel="into-the-unknown">
+                    <span class="channel-tab-name">Into The Unknown</span>
+                </button>
+            </div>
+
+            <!-- Category filter (Movies Consigliere) -->
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
                 <button class="filter-btn" data-filter="goodfellas">Goodfellas</button>
                 <button class="filter-btn" data-filter="godfather">The Godfather</button>
                 <button class="filter-btn" data-filter="pulp-fiction">Pulp Fiction</button>
                 <button class="filter-btn" data-filter="sopranos">The Sopranos</button>
-                <button class="filter-btn" data-filter="other">Other Films</button>
+                <button class="filter-btn" data-filter="other" data-i18n="filter.other">Other Films</button>
+            </div>
+
+            <!-- Category filter (Into The Unknown) -->
+            <div class="filter-bar hidden" id="filterBarUnknown">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
+                <button class="filter-btn" data-filter="science" data-i18n="filter.science">Science</button>
+                <button class="filter-btn" data-filter="history" data-i18n="filter.history">History</button>
+                <button class="filter-btn" data-filter="nature" data-i18n="filter.nature">Nature & Space</button>
             </div>
 
             <div class="video-grid" id="videoGrid">
                 <!-- Videos are injected by JS -->
             </div>
 
-            <div class="work-cta">
-                <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener" class="btn-outline">
+            <div class="work-cta" id="workCta">
+                <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener" class="btn-outline" id="channelLink" data-i18n="work.cta">
                     View All Videos on YouTube →
                 </a>
             </div>
@@ -125,45 +154,44 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">03</span>
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-desc">Interested in collaborating or want to discuss a project? Let's connect.</p>
+                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+                <p class="section-desc" data-i18n="contact.desc">Interested in collaborating or want to discuss a project? Let's connect.</p>
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-card">
                         <div class="contact-icon">📧</div>
                         <h3>Email</h3>
-                        <a href="mailto:anisdouar@gmail.com">anisdouar@gmail.com</a>
+                        <a href="mailto:anisdouar@outlook.fr">anisdouar@outlook.fr</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/213553777087" target="_blank" rel="noopener" data-i18n="contact.wa">Send me a message</a>
                     </div>
                     <div class="contact-card">
                         <div class="contact-icon">🎬</div>
                         <h3>YouTube</h3>
-                        <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener">@MoviesConsigliere</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">💬</div>
-                        <h3>Social</h3>
-                        <div class="social-links">
-                            <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener" aria-label="YouTube">
-                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.54 15.57V8.43L15.82 12l-6.28 3.57z"/></svg>
-                            </a>
+                        <div class="youtube-links">
+                            <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener">@MoviesConsigliere</a>
+                            <a href="https://www.youtube.com/@into_the-unknown" target="_blank" rel="noopener">@Into The Unknown</a>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your name">
+                        <label for="name" data-i18n="contact.name">Name</label>
+                        <input type="text" id="name" name="name" required data-i18n-placeholder="contact.namePh" placeholder="Your name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        <label for="email" data-i18n="contact.email">Email</label>
+                        <input type="email" id="email" name="email" required data-i18n-placeholder="contact.emailPh" placeholder="your@email.com">
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                        <label for="message" data-i18n="contact.message">Message</label>
+                        <textarea id="message" name="message" rows="5" required data-i18n-placeholder="contact.messagePh" placeholder="Tell me about your project..."></textarea>
                     </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
+                    <button type="submit" class="btn-primary" data-i18n="contact.send">Send Message</button>
                 </form>
             </div>
         </div>
@@ -174,9 +202,10 @@
         <div class="container">
             <div class="footer-content">
                 <p class="footer-logo">ANIS<span>DOUAR</span></p>
-                <p class="footer-text">&copy; 2024 Anis Douar. All rights reserved.</p>
+                <p class="footer-text">&copy; 2024 Anis Douar. <span data-i18n="footer.rights">All rights reserved.</span></p>
                 <div class="footer-links">
-                    <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener">YouTube</a>
+                    <a href="https://www.youtube.com/@MoviesConsigliere" target="_blank" rel="noopener">Movies Consigliere</a>
+                    <a href="https://www.youtube.com/@into_the-unknown" target="_blank" rel="noopener">Into The Unknown</a>
                 </div>
             </div>
         </div>

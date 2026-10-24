@@ -122,6 +122,38 @@ img { max-width: 100%; display: block; }
 .nav-links a:hover { color: var(--text-primary); }
 .nav-links a:hover::after { width: 100%; }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ─── LANGUAGE TOGGLE ─── */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.lang-toggle:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.lang-flag { font-size: 1rem; }
+.lang-code { margin-top: 1px; }
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -384,6 +416,45 @@ section {
     border-top: 1px solid var(--border);
 }
 
+/* ─── CHANNEL TABS ─── */
+.channel-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.channel-tab {
+    padding: 12px 28px;
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-secondary);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.channel-tab:hover {
+    border-color: var(--accent-dim);
+    color: var(--text-primary);
+}
+
+.channel-tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg-dark);
+}
+
+.channel-tab-name {
+    pointer-events: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
 .filter-bar {
     display: flex;
     flex-wrap: wrap;
@@ -635,6 +706,17 @@ section {
 }
 .social-links a:hover { color: var(--accent); }
 
+.youtube-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.youtube-links a {
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -808,6 +890,20 @@ section {
 
     .hero-title {
         letter-spacing: 4px;
+    }
+
+    .lang-toggle {
+        z-index: 1001;
+    }
+
+    .channel-tabs {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .channel-tab {
+        width: 100%;
+        text-align: center;
     }
 
     .filter-bar {
