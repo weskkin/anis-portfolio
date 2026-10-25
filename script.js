@@ -1,12 +1,9 @@
-// ── SHORTS DATA (Top Viewed - 6 per channel) ──────────────────────────────────
+// ── SHORTS DATA ───────────────────────────────────────────────────────────────
 
 var MC_SHORTS = [
-  {id:'v5SGM43YwuQ', title:'You Missed This in The Sopranos Finale'},
-  {id:'Pi8d0fnE4Y8', title:"Inside Paul Vario's $150,000 Day Criminal Empire"},
-  {id:'fAF8pgcq3vk', title:'The Hidden Meaning Behind The Hammer'},
-  {id:'g59TLt4XIeM', title:"Vario's Temper — Brutal Restaurant Beating"},
-  {id:'riLj9mb7PoU', title:'The Movie Never Lied To You'},
-  {id:'GpPvujk1ipg', title:'Why The System Demands Surrender, Not Change'}
+  {id:'bmkupTBLCgk', title:'Tony Montana Biggest Mistake'},
+  {id:'q-zbe550Czw', title:"How Realistic is The Godfather’s Portrayal of the Mafia?"},
+  {id:'-rjVa6lE4A8', title:'Who Was Gus Fring Before Better Call Saul ?'}
 ];
 
 var ITU_SHORTS = [
