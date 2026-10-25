@@ -1,90 +1,45 @@
-// ── SHORTS DATA ───────────────────────────────────────────────────────────────
+// ── SHORTS DATA (Top Viewed - 6 per channel) ──────────────────────────────────
 
 var MC_SHORTS = [
+  {id:'DAn8CXJoZmo', title:'Who Ordered the Final Hit on Tony Soprano?'},
+  {id:'v5SGM43YwuQ', title:'You Missed This in The Sopranos Finale'},
   {id:'Pi8d0fnE4Y8', title:"Inside Paul Vario's $150,000 Day Criminal Empire"},
-  {id:'g59TLt4XIeM', title:"Vario's Temper — Brutal Restaurant Beating"},
   {id:'fAF8pgcq3vk', title:'The Hidden Meaning Behind The Hammer'},
-  {id:'GpPvujk1ipg', title:'Why The System Demands Surrender, Not Change'},
+  {id:'g59TLt4XIeM', title:"Vario's Temper — Brutal Restaurant Beating"},
   {id:'riLj9mb7PoU', title:'The Movie Never Lied To You'}
 ];
 
 var ITU_SHORTS = [
+  {id:'sqZ-0uWNyM8', title:'The Solvay Conference: A Gathering of Physics Giants'},
+  {id:'sYar_O3d3FY', title:"Oppenheimer's Tragic Brilliance"},
+  {id:'c9YLXvg6ja4', title:'How Did Pigeons Send Messages?'},
+  {id:'hi7RR2HdzWo', title:'Did You Know That Wolves Can Alter Rivers?'},
   {id:'HBLwTaEWgmM', title:'The Immortal Cells of Henrietta Lacks'},
-  {id:'v3CD-kf_J0M', title:'The Doctor Who Saved Countless Lives But His Colleagues Hated Him'},
-  {id:'LrWlAKsSDOY', title:'The Biggest Black Hole Known to Humanity'},
-  {id:'kUM0sfL4XCI', title:'El Niño to Amplify Heat in the Upcoming Years'},
-  {id:'yFP8hyze66Q', title:'The Largest Canyon in the Solar System — Valles Marineris'}
+  {id:'De4zHo3YYlo', title:'Eratosthenes Proved That Earth Is Round By Using A Camel'}
 ];
 
-// ── VIDEO DATA ────────────────────────────────────────────────────────────────
+// ── VIDEO DATA (5 per channel) ────────────────────────────────────────────────
 
 var MC_VIDEOS = [
-  {id:'pHwE_a6IwzA', title:'Paul Vario Was Far Worse Than Goodfellas Ever Showed',              cat:'goodfellas'},
-  {id:'SpICdPCqv38', title:'Why Was Tommy Really Killed in Goodfellas, and Who Set Him Up?',    cat:'goodfellas'},
-  {id:'zO6uanlY4Sc', title:'What Really Happened to Henry Hill After Goodfellas Ended?',         cat:'goodfellas'},
-  {id:'XSyvGHBL47A', title:'Goodfellas Lied — What Really Happened to Frankie Carbone?',        cat:'goodfellas'},
-  {id:'_fScTfw2gs0', title:"This Dinner Scene in Goodfellas Isn't What It Looks Like",           cat:'goodfellas'},
-  {id:'loDK7q4tGJo', title:'How Do the Corleone Men Redefine Strength in The Godfather?',       cat:'godfather'},
-  {id:'ZwYZB_Xq90E', title:'Was Sonny Corleone Actually a Bad Don, or Did We Misread Him?',     cat:'godfather'},
-  {id:'lCXqfKGcb0M', title:'What Kay and Apollonia Really Represent in The Godfather?',         cat:'godfather'},
-  {id:'azR4rif_2BI', title:'The Myths The Godfather Made You Believe About The Mafia',          cat:'godfather'},
-  {id:'JZlmAZPx1m8', title:'How Did Paulie and Carlo Seal Their Deaths in The Godfather?',      cat:'godfather'},
-  {id:'sbttM97-byc', title:'Did Marsellus Wallace Use Mia to Test Vincent Vega?',               cat:'pulp-fiction'},
-  {id:'j1XWFgg1Fq0', title:"What Butch's Gold Watch Really Means in Pulp Fiction",              cat:'pulp-fiction'},
-  {id:'YP9MFU2ZMwA', title:"What Jules' Bible Verse ACTUALLY Means (It's Not What You Think)",  cat:'pulp-fiction'},
-  {id:'4BtdR2d8FIw', title:'What Was Vincent Vega Really Doing in Amsterdam for 3 Years?',      cat:'pulp-fiction'},
-  {id:'DAn8CXJoZmo', title:'Who Ordered the Final Hit on Tony Soprano?',                        cat:'sopranos'},
-  {id:'5bwXxJ23_6Q', title:"Did New York Secretly Decide Tony Soprano's Fate?",                 cat:'sopranos'},
-  {id:'0wGudsTQKUI', title:'What Happened to the Russian in Pine Barrens? The Answer Is Clear', cat:'sopranos'},
-  {id:'M09HhE4ZUOs', title:"Why Did John Doe Kill Tracy? Wasn't He Supposed to Kill Only Sinners?", cat:'other'},
-  {id:'N6Ov7GMhf6I', title:"Why Did Schultz Refuse to Shake Candie's Hand in Django Unchained?",cat:'other'},
-  {id:'2DGl1ViW3i0', title:'Why Did Frank Lucas Kill Tango in Front of 300 Witnesses?',         cat:'other'},
-  {id:'14x-dOArBT0', title:'Why Did the FBI Tell Sonny Black That Donnie Brasco Was a Fed?',    cat:'other'},
-  {id:'1mBFHGjv_kQ', title:'Did Someone Inside The Truman Show Secretly Help Truman Escape?',   cat:'other'},
-  {id:'BjK47UEE6YM', title:'The Man Who Turned Taxi Driver Into Instructions for Real Violence', cat:'other'},
-  {id:'8Lgdoa4s7jo', title:'The One Clue in Shutter Island That Changes Everything',            cat:'other'},
-  {id:'_REQlwpAG98', title:'Why Red Failed Parole Twice, Then Won It by Giving Up?',            cat:'other'},
-  {id:'lO8TKbSQlYE', title:"The Iconic Oldboy Hallway Scene Isn't Just a Fight Scene",          cat:'other'},
-  {id:'Oeo5XQGzh_U', title:"How Much of Verbal Kint's Story Was Actually True in The Usual Suspects?", cat:'other'},
-  {id:'ZCCb2py3ku4', title:'Did Cliff Booth Really Kill His Wife in Once Upon a Time in Hollywood?', cat:'other'},
-  {id:'xKhjHAmWTDg', title:"What Did The Wolf of Wall Street Hide About Jordan Belfort's Real Life?", cat:'other'}
+  {id:'B1mDQLAJklE', title:"Vincent's Death Is More Complicated Than You Think"},
+  {id:'oAwilIiHJnk', title:'How It All Went Wrong for Tony Montana'},
+  {id:'ABpuI27FuJI', title:"What You Didn't Know from Watching Goodfellas"},
+  {id:'DBQVqLDBZgY', title:"Why The Four Bosses Failed To Predict Michael Corleone's Rise To Power?"},
+  {id:'pHwE_a6IwzA', title:'Paul Vario Was Far Worse Than Goodfellas Ever Showed'}
 ];
-
-var MC_LABELS = {
-  goodfellas:   'Goodfellas',
-  godfather:    'The Godfather',
-  'pulp-fiction': 'Pulp Fiction',
-  sopranos:     'The Sopranos',
-  other:        'Other Films'
-};
 
 var ITU_VIDEOS = [
-  {id:'A_9scFwW3ns', title:'The Science Behind "Cute Aggression"',                               cat:'science'},
-  {id:'1pIEa5sC9Cw', title:'The Biggest Nuclear Bomb The World Has Ever Seen',                   cat:'history'},
-  {id:'pAnHRS1IqQM', title:'5 Strangest and Most Terrifying Planets in the Universe',            cat:'nature'},
-  {id:'Y0v9tCl9SrA', title:'What Was Life Like in the Ancient Supercontinent of Pangea?',        cat:'nature'},
-  {id:'FkY9vzXXzWo', title:'How Eratosthenes Proved Our Round Earth 2,200 Years Ago?',           cat:'history'},
-  {id:'DzrZaTE5_hY', title:'Why Time Appears Faster As We Age?',                                 cat:'science'},
-  {id:'EdTidT6NBxQ', title:'What Happens Every Second In The Universe?',                         cat:'nature'},
-  {id:'l3nN9OZeZZE', title:'Everything You Think You Know About Nikola Tesla is a Lie!',         cat:'history'},
-  {id:'17fnmXgaSxY', title:'Was Werner Heisenberg A NAZI Scientist?',                            cat:'history'},
-  {id:'9IkjRbwAS3w', title:'The Curies: The Family with the Most Nobel Prizes in History',       cat:'history'},
-  {id:'ckmSC-qSkkc', title:'17 Nobel Prize Winners United in One Photo — The Solvay Conference 1927', cat:'history'},
-  {id:'xO1oMMOEyT8', title:"Beyond the Screen: The Human Cost of Your Tech's Cobalt",            cat:'science'},
-  {id:'g2gmX9nPSiM', title:'Into the Abyss: Exploring the Bizarre Creatures of the Deep Sea',   cat:'nature'},
-  {id:'iASYkWS5dBg', title:'When Paradise Turns to Hell: The Story of Universe 25',              cat:'science'}
+  {id:'ckmSC-qSkkc', title:'17 Nobel Prize Winners United in One Photo — The Solvay Conference 1927'},
+  {id:'A_9scFwW3ns', title:'The Science Behind "Cute Aggression"'},
+  {id:'9IkjRbwAS3w', title:'The Curies: The Family with the Most Nobel Prizes in History'},
+  {id:'FkY9vzXXzWo', title:'How Eratosthenes Proved Our Round Earth 2,200 Years Ago?'},
+  {id:'Y0v9tCl9SrA', title:'What Was Life Like in the Ancient Supercontinent of Pangea?'}
 ];
 
-var ITU_LABELS = {
-  science: 'Science',
-  history: 'History',
-  nature:  'Nature & Space'
-};
-
 // ── CONFIG ────────────────────────────────────────────────────────────────────
-var YT_KEY   = 'AIzaSyCWNWc7wSVOIhAFlZPH4Ql8Q4HBemQFh6Q';
-var CH_MC    = 'UCfYA2EAXkK3CLamAGGZj1eA';
-var CH_ITU   = 'UCfc1Sa0Gec4HdFM7Gxu5uYA';
+var YT_KEY = 'AIzaSyCWNWc7wSVOIhAFlZPH4Ql8Q4HBemQFh6Q';
+var CH_MC  = 'UCfYA2EAXkK3CLamAGGZj1eA';
+var CH_ITU = 'UCfc1Sa0Gec4HdFM7Gxu5uYA';
 
 // ── LANGUAGE ──────────────────────────────────────────────────────────────────
 var LANG = localStorage.getItem('lang') || 'en';
@@ -106,8 +61,6 @@ var TEXT = {
     's4-t': '5+ Years Experience', 's4-d': 'A proven track record of creating content that resonates, with millions of views across channels.',
     'c1-desc': 'Cinematic deep-dives into the greatest films ever made.',
     'c2-desc': 'Exploring science, history, and the mysteries of our world.',
-    'c1-other':   'Other Films',
-    'c2-science': 'Science', 'c2-history': 'History', 'c2-nature': 'Nature & Space',
     'ct-title': 'Get In Touch',    'ct-desc': 'Interested in collaborating? Let\'s connect.',
     'ct-wa':    'Send me a message',
     'ct-send':  'Send Message',
@@ -131,8 +84,6 @@ var TEXT = {
     's4-t': '5+ ans d\'expérience',  's4-d': 'Un parcours prouvé dans la création de contenu qui résonne, avec des millions de vues sur l\'ensemble des chaînes.',
     'c1-desc': 'Analyses cinématographiques approfondies des plus grands films.',
     'c2-desc': 'Explorer la science, l\'histoire et les mystères de notre monde.',
-    'c1-other':   'Autres films',
-    'c2-science': 'Science', 'c2-history': 'Histoire', 'c2-nature': 'Nature & Espace',
     'ct-title': 'Me Contacter',      'ct-desc': 'Intéressé par une collaboration ? Contactez-moi.',
     'ct-wa':    'Envoyez-moi un message',
     'ct-send':  'Envoyer le message',
@@ -149,14 +100,14 @@ function applyLang() {
     if (el) el.innerHTML = t[id];
   });
   document.documentElement.lang = LANG;
-  document.getElementById('langBtn').textContent = LANG === 'en' ? 'FR 🇫🇷' : 'EN 🇬🇧';
+  var langBtn = document.getElementById('langBtn');
+  if (langBtn) langBtn.textContent = LANG === 'en' ? 'FR 🇫🇷' : 'EN 🇬🇧';
 }
 
-// ── BUILD A CARD ──────────────────────────────────────────────────────────────
-function makeCard(v, label) {
+// ── BUILD A VIDEO CARD ─────────────────────────────────────────────────────────
+function makeCard(v) {
   var card = document.createElement('div');
   card.className = 'video-card';
-  card.dataset.cat = v.cat;
 
   card.innerHTML =
     '<div class="thumb-wrap" id="tw-' + v.id + '">' +
@@ -171,10 +122,8 @@ function makeCard(v, label) {
     '<div class="video-info">' +
       '<h3 class="video-title">' + v.title + '</h3>' +
       '<div class="video-stats" id="st-' + v.id + '"><span class="vstat" style="color:var(--text3)">Loading stats…</span></div>' +
-      '<span class="video-tag">' + (label || v.cat) + '</span>' +
     '</div>';
 
-  // click thumbnail → load iframe
   card.querySelector('.thumb-wrap').addEventListener('click', function() {
     this.innerHTML =
       '<iframe src="https://www.youtube.com/embed/' + v.id + '?autoplay=1"' +
@@ -185,9 +134,21 @@ function makeCard(v, label) {
   return card;
 }
 
-// ── FILL SHORTS GRID ─────────────────────────────────────────────────────────
+// ── FILL VIDEO GRID ───────────────────────────────────────────────────────────
+function fillGrid(gridId, videos) {
+  var grid = document.getElementById(gridId);
+  if (!grid) return;
+  grid.innerHTML = '';
+  videos.forEach(function(v) {
+    grid.appendChild(makeCard(v));
+  });
+  if (YT_KEY) fetchStats(videos.map(function(v){ return v.id; }));
+}
+
+// ── FILL SHORTS GRID ──────────────────────────────────────────────────────────
 function fillShorts(gridId, shorts) {
   var grid = document.getElementById(gridId);
+  if (!grid) return;
   grid.innerHTML = '';
   shorts.forEach(function(s) {
     var card = document.createElement('div');
@@ -220,38 +181,9 @@ function fillShorts(gridId, shorts) {
   if (YT_KEY) fetchStats(shorts.map(function(s){ return s.id; }));
 }
 
-// ── FILL A GRID ───────────────────────────────────────────────────────────────
-function fillGrid(gridId, videos, labels) {
-  var grid = document.getElementById(gridId);
-  grid.innerHTML = '';
-  videos.forEach(function(v) {
-    grid.appendChild(makeCard(v, labels[v.cat]));
-  });
-  if (YT_KEY) fetchStats(videos.map(function(v){ return v.id; }));
-}
-
-// ── FILTER pills ──────────────────────────────────────────────────────────────
-function setupFilters(filtersId, gridId) {
-  var bar = document.getElementById(filtersId);
-  var grid = document.getElementById(gridId);
-  bar.addEventListener('click', function(e) {
-    var btn = e.target.closest('.pill');
-    if (!btn || btn.dataset.grid !== gridId) return;
-    // update active pill
-    bar.querySelectorAll('.pill').forEach(function(b) { b.classList.remove('active'); });
-    btn.classList.add('active');
-    // show/hide cards
-    var cat = btn.dataset.cat;
-    grid.querySelectorAll('.video-card').forEach(function(card) {
-      card.classList.toggle('hidden', cat !== 'all' && card.dataset.cat !== cat);
-    });
-  });
-}
-
 // ── FETCH STATS ───────────────────────────────────────────────────────────────
 function fetchStats(ids) {
   if (!YT_KEY || !ids.length) return;
-  // batch 50 at a time
   for (var i = 0; i < ids.length; i += 50) {
     (function(batch) {
       fetch('https://www.googleapis.com/youtube/v3/videos?part=statistics&id=' + batch.join(',') + '&key=' + YT_KEY)
@@ -302,58 +234,59 @@ function fmt(n) {
   return n.toLocaleString();
 }
 
+function refreshAllStats() {
+  fetchStats(MC_VIDEOS.map(function(v){ return v.id; }));
+  fetchStats(ITU_VIDEOS.map(function(v){ return v.id; }));
+  fetchStats(MC_SHORTS.map(function(s){ return s.id; }));
+  fetchStats(ITU_SHORTS.map(function(s){ return s.id; }));
+}
+
 // ── BOOT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function() {
-
-  // apply language
   applyLang();
 
-  // fill both grids
-  fillGrid('grid1', MC_VIDEOS,  MC_LABELS);
-  fillGrid('grid2', ITU_VIDEOS, ITU_LABELS);
+  // Fill video grids (5 per channel)
+  fillGrid('grid1', MC_VIDEOS);
+  fillGrid('grid2', ITU_VIDEOS);
 
-  // fill shorts
+  // Fill shorts grids (6 per channel)
   fillShorts('shorts1', MC_SHORTS);
   fillShorts('shorts2', ITU_SHORTS);
 
-  // set up filters (show/hide cards — no re-render)
-  setupFilters('filters1', 'grid1');
-  setupFilters('filters2', 'grid2');
-
-  // fetch combined channel stats for hero
+  // Fetch combined hero stats
   fetchChannelStats();
 
-  // language toggle
+  // Language toggle
   document.getElementById('langBtn').addEventListener('click', function() {
     LANG = LANG === 'en' ? 'fr' : 'en';
     localStorage.setItem('lang', LANG);
     applyLang();
-    // refresh stats labels
-    fetchStats(MC_VIDEOS.map(function(v){ return v.id; }));
-    fetchStats(ITU_VIDEOS.map(function(v){ return v.id; }));
+    refreshAllStats();
   });
 
-  // navbar scroll
+  // Navbar scroll
   window.addEventListener('scroll', function() {
     document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
   }, { passive: true });
 
-  // mobile hamburger
+  // Mobile hamburger
   var ham   = document.getElementById('hamburger');
   var links = document.getElementById('navLinks');
-  ham.addEventListener('click', function() {
-    var open = links.classList.toggle('open');
-    ham.classList.toggle('open', open);
-    ham.setAttribute('aria-expanded', open);
-  });
-  links.querySelectorAll('a').forEach(function(a) {
-    a.addEventListener('click', function() {
-      links.classList.remove('open');
-      ham.classList.remove('open');
+  if (ham && links) {
+    ham.addEventListener('click', function() {
+      var open = links.classList.toggle('open');
+      ham.classList.toggle('open', open);
+      ham.setAttribute('aria-expanded', open);
     });
-  });
+    links.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        links.classList.remove('open');
+        ham.classList.remove('open');
+      });
+    });
+  }
 
-  // contact form
+  // Contact form
   document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     var n   = document.getElementById('name').value;
@@ -364,5 +297,4 @@ document.addEventListener('DOMContentLoaded', function() {
       '?subject=' + encodeURIComponent('Portfolio Contact from ' + n) +
       '&body='    + encodeURIComponent('Name: ' + n + '\nEmail: ' + em + '\n\nMessage:\n' + msg);
   });
-
 });
