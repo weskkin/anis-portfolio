@@ -1,12 +1,12 @@
 // ── SHORTS DATA (Top Viewed - 6 per channel) ──────────────────────────────────
 
 var MC_SHORTS = [
-  {id:'DAn8CXJoZmo', title:'Who Ordered the Final Hit on Tony Soprano?'},
   {id:'v5SGM43YwuQ', title:'You Missed This in The Sopranos Finale'},
   {id:'Pi8d0fnE4Y8', title:"Inside Paul Vario's $150,000 Day Criminal Empire"},
   {id:'fAF8pgcq3vk', title:'The Hidden Meaning Behind The Hammer'},
   {id:'g59TLt4XIeM', title:"Vario's Temper — Brutal Restaurant Beating"},
-  {id:'riLj9mb7PoU', title:'The Movie Never Lied To You'}
+  {id:'riLj9mb7PoU', title:'The Movie Never Lied To You'},
+  {id:'GpPvujk1ipg', title:'Why The System Demands Surrender, Not Change'}
 ];
 
 var ITU_SHORTS = [
@@ -21,10 +21,10 @@ var ITU_SHORTS = [
 // ── VIDEO DATA (5 per channel) ────────────────────────────────────────────────
 
 var MC_VIDEOS = [
-  {id:'B1mDQLAJklE', title:"Vincent's Death Is More Complicated Than You Think"},
-  {id:'oAwilIiHJnk', title:'How It All Went Wrong for Tony Montana'},
-  {id:'ABpuI27FuJI', title:"What You Didn't Know from Watching Goodfellas"},
   {id:'DBQVqLDBZgY', title:"Why The Four Bosses Failed To Predict Michael Corleone's Rise To Power?"},
+  {id:'oAwilIiHJnk', title:'How It All Went Wrong for Tony Montana'},
+  {id:'B1mDQLAJklE', title:"Vincent's Death Is More Complicated Than You Think"},
+  {id:'ABpuI27FuJI', title:"What You Didn't Know from Watching Goodfellas"},
   {id:'pHwE_a6IwzA', title:'Paul Vario Was Far Worse Than Goodfellas Ever Showed'}
 ];
 
