@@ -43,48 +43,74 @@ var LANG = localStorage.getItem('lang') || 'en';
 
 var TEXT = {
   en: {
-    'h-label':   'Video Editor · Content Creator · Community Manager',
-    'h-sub':     '5+ years crafting compelling video content, building engaged communities, and bringing creative visions to life.',
-    'h-videos':  'Videos', 'h-views': 'Total Views', 'h-subs': 'Subscribers',
-    'h-cta':     'View My Work',
-    'a-title':   'About Me',
-    'a-lead':    'I\'m <strong>Anis Douar</strong> — a video editor, content creator, and community manager with over <strong>5 years of experience</strong>.',
-    'a-p1':      'I create engaging video content that connects with audiences and drives growth. From concept to final cut, I handle every step of the production process — scripting, editing, motion graphics, and publishing — while also managing online communities and social media strategies.',
-    'a-p2':      'My work spans two YouTube channels: <em>Movies Consigliere</em> (cinematic deep-dives into iconic films) and <em>Into The Unknown</em> (science, history, and the mysteries of our world). Together they\'ve reached millions of viewers worldwide.',
-    'a-p3':      'Whether you need a video editor, a community manager, or a creative partner — I\'m here to help.',
+    'nav-about':     'About',
+    'nav-posters':   'Posters',
+    'nav-logos':     'Logos',
+    'nav-thumbnails':'Thumbnails',
+    'nav-mc':        'Movies Consigliere',
+    'nav-itu':       'Into The Unknown',
+    'nav-contact':   'Contact',
+    'h-label':       'Video Editor · Content Creator · Community Manager',
+    'h-sub':         '5+ years crafting compelling video content, building engaged communities, and bringing creative visions to life.',
+    'h-videos':      'Videos', 'h-views': 'Total Views', 'h-subs': 'Subscribers',
+    'h-cta':         'View My Work',
+    'a-title':       'About Me',
+    'a-lead':        'I\'m <strong>Anis Douar</strong> — a video editor, content creator, and community manager with over <strong>5 years of experience</strong>.',
+    'a-p1':          'I create engaging video content that connects with audiences and drives growth. From concept to final cut, I handle every step of the production process — scripting, editing, motion graphics, and publishing — while also managing online communities and social media strategies.',
+    'a-p2':          'My work spans two YouTube channels: <em>Movies Consigliere</em> (cinematic deep-dives into iconic films) and <em>Into The Unknown</em> (science, history, and the mysteries of our world). Together they\'ve reached millions of viewers worldwide.',
+    'a-p3':          'Whether you need a video editor, a community manager, or a creative partner — I\'m here to help.',
     's1-t': 'Video Editing',       's1-d': 'Professional editing, motion graphics, and post-production for YouTube and social media.',
     's2-t': 'Community Management','s2-d': 'Building and nurturing engaged online communities, managing social media presence and brand voice.',
     's3-t': 'Content Strategy',    's3-d': 'From research and scripting to SEO and audience growth — a complete content pipeline.',
     's4-t': '5+ Years Experience', 's4-d': 'A proven track record of creating content that resonates, with millions of views across channels.',
-    'c1-desc': 'Cinematic deep-dives into the greatest films ever made.',
-    'c2-desc': 'Exploring science, history, and the mysteries of our world.',
-    'ct-title': 'Get In Touch',    'ct-desc': 'Interested in collaborating? Let\'s connect.',
-    'ct-wa':    'Send me a message',
-    'ct-send':  'Send Message',
-    'lbl-name': 'Name', 'lbl-email': 'Email', 'lbl-msg': 'Message',
+    'pos-title': 'Posters',
+    'pos-desc':  'Movie posters, promotional art, and custom visual concepts.',
+    'log-title': 'Logos & Branding',
+    'log-desc':  'Brand marks, emblems, and visual identities crafted for content creators.',
+    'th-title':  'YouTube Thumbnails',
+    'th-desc':   'High-impact, custom thumbnail designs engineered for click-through rate and audience retention.',
+    'c1-desc':   'Cinematic deep-dives into the greatest films ever made.',
+    'c2-desc':   'Exploring science, history, and the mysteries of our world.',
+    'ct-title':  'Get In Touch',    'ct-desc': 'Interested in collaborating? Let\'s connect.',
+    'ct-wa':     'Send me a message',
+    'ct-send':   'Send Message',
+    'lbl-name':  'Name', 'lbl-email': 'Email', 'lbl-msg': 'Message',
     'ft-rights': 'All rights reserved.',
     'views': 'views', 'likes': 'likes', 'comments': 'comments'
   },
   fr: {
-    'h-label':   'Monteur Vidéo · Créateur de Contenu · Community Manager',
-    'h-sub':     'Plus de 5 ans d\'expérience dans la création de contenu vidéo percutant, la gestion de communautés engagées et la réalisation de projets créatifs.',
-    'h-videos':  'Vidéos', 'h-views': 'Vues totales', 'h-subs': 'Abonnés',
-    'h-cta':     'Voir mes réalisations',
-    'a-title':   'À propos',
-    'a-lead':    'Je suis <strong>Anis Douar</strong> — monteur vidéo, créateur de contenu et community manager avec plus de <strong>5 ans d\'expérience</strong>.',
-    'a-p1':      'Je crée du contenu vidéo engageant qui connecte avec les audiences et stimule la croissance. Du concept au montage final, je gère chaque étape du processus de production — scénarisation, montage, motion design et publication — tout en gérant les communautés en ligne et les stratégies social media.',
-    'a-p2':      'Mon travail couvre deux chaînes YouTube : <em>Movies Consigliere</em> (analyses cinématographiques de films iconiques) et <em>Into The Unknown</em> (science, histoire et mystères du monde). Ensemble, elles ont atteint des millions de spectateurs.',
-    'a-p3':      'Que vous ayez besoin d\'un monteur vidéo, d\'un community manager ou d\'un partenaire créatif — je suis là pour vous aider.',
+    'nav-about':     'À propos',
+    'nav-posters':   'Affiches',
+    'nav-logos':     'Logos',
+    'nav-thumbnails':'Miniatures',
+    'nav-mc':        'Movies Consigliere',
+    'nav-itu':       'Into The Unknown',
+    'nav-contact':   'Contact',
+    'h-label':       'Monteur Vidéo · Créateur de Contenu · Community Manager',
+    'h-sub':         'Plus de 5 ans d\'expérience dans la création de contenu vidéo percutant, la gestion de communautés engagées et la réalisation de projets créatifs.',
+    'h-videos':      'Vidéos', 'h-views': 'Vues totales', 'h-subs': 'Abonnés',
+    'h-cta':         'Voir mes réalisations',
+    'a-title':       'À propos',
+    'a-lead':        'Je suis <strong>Anis Douar</strong> — monteur vidéo, créateur de contenu et community manager avec plus de <strong>5 ans d\'expérience</strong>.',
+    'a-p1':          'Je crée du contenu vidéo engageant qui connecte avec les audiences et stimule la croissance. Du concept au montage final, je gère chaque étape du processus de production — scénarisation, montage, motion design et publication — tout en gérant les communautés en ligne et les stratégies social media.',
+    'a-p2':          'Mon travail couvre deux chaînes YouTube : <em>Movies Consigliere</em> (analyses cinématographiques de films iconiques) et <em>Into The Unknown</em> (science, histoire et mystères du monde). Ensemble, elles ont atteint des millions de spectateurs.',
+    'a-p3':          'Que vous ayez besoin d\'un monteur vidéo, d\'un community manager ou d\'un partenaire créatif — je suis là pour vous aider.',
     's1-t': 'Montage Vidéo',         's1-d': 'Montage professionnel, motion design et post-production pour YouTube et les réseaux sociaux.',
     's2-t': 'Community Management',  's2-d': 'Construction et animation de communautés en ligne engagées, gestion de la présence sur les réseaux sociaux.',
     's3-t': 'Stratégie de Contenu',  's3-d': 'De la recherche à la rédaction, SEO et croissance d\'audience — un pipeline de contenu complet.',
     's4-t': '5+ ans d\'expérience',  's4-d': 'Un parcours prouvé dans la création de contenu qui résonne, avec des millions de vues sur l\'ensemble des chaînes.',
-    'c1-desc': 'Analyses cinématographiques approfondies des plus grands films.',
-    'c2-desc': 'Explorer la science, l\'histoire et les mystères de notre monde.',
-    'ct-title': 'Me Contacter',      'ct-desc': 'Intéressé par une collaboration ? Contactez-moi.',
-    'ct-wa':    'Envoyez-moi un message',
-    'ct-send':  'Envoyer le message',
-    'lbl-name': 'Nom', 'lbl-email': 'Email', 'lbl-msg': 'Message',
+    'pos-title': 'Affiches',
+    'pos-desc':  'Affiches de films, visuels promotionnels et concepts graphiques originaux.',
+    'log-title': 'Logos & Identité Visuelle',
+    'log-desc':  'Logos, emblèmes de marque et identités visuelles pour créateurs de contenu.',
+    'th-title':  'Miniatures YouTube',
+    'th-desc':   'Miniatures percutantes conçues pour maximiser le taux de clics et la rétention.',
+    'c1-desc':   'Analyses cinématographiques approfondies des plus grands films.',
+    'c2-desc':   'Explorer la science, l\'histoire et les mystères de notre monde.',
+    'ct-title':  'Me Contacter',      'ct-desc': 'Intéressé par une collaboration ? Contactez-moi.',
+    'ct-wa':     'Envoyez-moi un message',
+    'ct-send':   'Envoyer le message',
+    'lbl-name':  'Nom', 'lbl-email': 'Email', 'lbl-msg': 'Message',
     'ft-rights': 'Tous droits réservés.',
     'views': 'vues', 'likes': 'j\'aime', 'comments': 'commentaires'
   }
@@ -246,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
   fillGrid('grid1', MC_VIDEOS);
   fillGrid('grid2', ITU_VIDEOS);
 
-  // Fill shorts grids (6 per channel)
+  // Fill shorts grids (per channel)
   fillShorts('shorts1', MC_SHORTS);
   fillShorts('shorts2', ITU_SHORTS);
 
@@ -294,4 +320,50 @@ document.addEventListener('DOMContentLoaded', function() {
       '?subject=' + encodeURIComponent('Portfolio Contact from ' + n) +
       '&body='    + encodeURIComponent('Name: ' + n + '\nEmail: ' + em + '\n\nMessage:\n' + msg);
   });
+
+  // Lightbox
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+  var lightboxCaption = document.getElementById('lightboxCaption');
+  var lightboxClose = document.getElementById('lightboxClose');
+
+  function openLightbox(src, caption) {
+    if (!lightbox || !lightboxImg) return;
+    lightboxImg.src = src;
+    if (lightboxCaption) lightboxCaption.textContent = caption || '';
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (lightbox) {
+    document.querySelectorAll('.lightbox-trigger').forEach(function(el) {
+      el.addEventListener('click', function() {
+        var src = el.getAttribute('data-src');
+        var cap = el.getAttribute('data-caption');
+        openLightbox(src, cap);
+      });
+    });
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightbox);
+    }
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox || e.target.classList.contains('lightbox-backdrop')) {
+        closeLightbox();
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  }
 });
