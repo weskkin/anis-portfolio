@@ -100,7 +100,7 @@ var TEXT = {
     's3-t': 'Stratégie de Contenu',  's3-d': 'De la recherche à la rédaction, SEO et croissance d\'audience — un pipeline de contenu complet.',
     's4-t': '5+ ans d\'expérience',  's4-d': 'Un parcours prouvé dans la création de contenu qui résonne, avec des millions de vues sur l\'ensemble des chaînes.',
     'pos-title': 'Affiches',
-    'pos-desc':  'Affiches de films, visuels promotionnels et concepts graphiques originaux.',
+    'pos-desc':  'Affiches pour les réseaux sociaux.',
     'log-title': 'Logos & Identité Visuelle',
     'log-desc':  'Logos, emblèmes de marque et identités visuelles pour créateurs de contenu.',
     'th-title':  'Miniatures YouTube',
